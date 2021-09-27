@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	http2 "github.com/katzien/go-structure-examples/new/http"
 	"log"
 	"net/http"
 
 	"github.com/katzien/go-structure-examples/new/adding"
-	"github.com/katzien/go-structure-examples/new/http/rest"
 	"github.com/katzien/go-structure-examples/new/listing"
 	"github.com/katzien/go-structure-examples/new/reviewing"
 	"github.com/katzien/go-structure-examples/new/storage/json"
@@ -50,7 +50,7 @@ func main() {
 	}
 
 	// set up the HTTP server
-	router := rest.Handler(adder, lister, reviewer)
+	router := http2.Handler(adder, lister, reviewer)
 
 	fmt.Println("The beer server is on tap now: http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", router))
