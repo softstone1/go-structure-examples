@@ -2,6 +2,8 @@
 
 ## Links to video and slides:
 
+_Note: these talks refer to [release (git tag) v1.0](https://github.com/katzien/go-structure-examples/releases/tag/v.10) of this repository._
+
 2018-09-28 GoWayFest 2.0 [video](https://www.youtube.com/watch?v=Qtk9FFOoT5M&t=11s) | [slides](https://github.com/katzien/talks/blob/master/how-do-you-structure-your-apps/gowayfest2.0-2018-09-28/slides.pdf)
 
 2018-09-19 London Gophers [video](https://www.youtube.com/watch?v=B5oQnECDJ8g) | [slides](https://github.com/katzien/talks/blob/master/how-do-you-structure-your-apps/londongophers-2018-09-19/slides.pdf)
@@ -16,5 +18,10 @@
 
 ## How to run
 
-Not all of these examples will compile. Only the flat, domain, domain-hex and domain-hex-actor will compile.
+Pick the example (directory) you want to run, then run main.go:
+
+`go run main.go` or `go run cmd/beer-server/main.go`
+
+### [Release v1.0 notes]((https://github.com/katzien/go-structure-examples/releases/tag/v.10))
+Not all examples will compile. Only the flat, domain, domain-hex and domain-hex-actor will compile.
 For more information about why that is, please refer to the talk.
