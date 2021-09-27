@@ -3,8 +3,8 @@
 
 **/data/beers/**
 **/data/reviews/**
-vendor
 
+# binaries from each example
 flat/flat
 modular/modular
 layered/layered
