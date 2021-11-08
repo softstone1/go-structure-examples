@@ -1,8 +1,10 @@
 package main
 
-import "github.com/katzien/go-structure-examples/new/adding"
+import (
+	"github.com/katzien/go-structure-examples/new/domain"
+)
 
-var DefaultBeers = []adding.Beer{
+var DefaultBeers = []domain.Beer{
 	{
 		Name:    "Pliny the Elder",
 		Brewery: "Russian River Brewing Company",
